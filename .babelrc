@@ -1,0 +1,21 @@
+{
+    "plugins": [
+        [
+            "emotion",
+            {
+                "sourceMap": true,
+                "autoLabel": true
+            }
+        ]
+    ],
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        [
+            "@babel/preset-typescript",
+            {
+                "jsxPragma": "h"
+            }
+        ]
+    ]
+}
