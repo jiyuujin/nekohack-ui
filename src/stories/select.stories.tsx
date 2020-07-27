@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/preact'
 import { h } from 'preact'
 
-import Select from '../src/select'
+import Select from '../components/select'
 
 const options = [
     {

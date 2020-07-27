@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/preact'
 import { h } from 'preact'
 
-import Input from '../src/input'
+import Input from '../components/input'
 
 const update = (text: string) => {
     console.log(text)
