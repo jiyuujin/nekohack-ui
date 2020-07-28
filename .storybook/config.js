@@ -1,6 +1,6 @@
 import { configure } from '@storybook/preact'
 
-const req = require.context('../stories', true, /.stories.tsx$/)
+const req = require.context('../src/stories', true, /.stories.tsx$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))
