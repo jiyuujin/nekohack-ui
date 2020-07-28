@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "storybook": "start-storybook -p 6001 -c .storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "npm run clear && rollup -c",
+    "clear": "rm -rf .dist/"
   },
   "dependencies": {
     "emotion": "^10.0.27",
@@ -16,6 +18,9 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@nekohack/eslint-config-react": "^0.3.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-sucrase": "^3.1.0",
+    "@rollup/plugin-typescript": "^5.0.2",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/preact": "^5.3.19",
     "@types/node": "^14.0.19",
@@ -31,6 +36,10 @@
     "preact-render-to-string": "^5.1.9",
     "prettier": "^2.0.5",
     "purgecss-webpack-plugin": "^2.3.0",
+    "rollup": "^2.23.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-scss": "^2.5.0",
+    "rollup-plugin-terser": "^6.1.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "ts-loader": "^7.0.5",
