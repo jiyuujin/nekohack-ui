@@ -6,5 +6,12 @@
     "jsxFactory": "h",
     "moduleResolution": "node"
   },
-  "include": ["src/**/*.tsx", "src/**/*.ts", "src/index.js"]
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "src/index.js"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
