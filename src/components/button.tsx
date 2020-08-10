@@ -16,7 +16,7 @@ const text = css`
     color: #000;
 `
 
-export default function Button(props: RenderableProps<{ onClick }>) {
+export default function Button(props: RenderableProps<{ onClick: Function }>) {
     const handleClick = (e: any) => {
         props.onClick()
     }
