@@ -12,7 +12,7 @@ export default {
   input: './src/index.ts',
   output: {
     file: './dist/nekohack-ui.js',
-    format: 'umd',
+    format: 'iife',
     name: 'NekohackUI',
     indent: false,
     sourcemap: true,
