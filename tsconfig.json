@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "esnext",
+    "outDir": "./lib",
+    "lib": ["es2018", "dom"],
+    "target": "es5",
+    "module": "commonjs",
     "jsx": "react",
     "jsxFactory": "h",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "skipLibCheck": true
   },
   "include": [
-    "src/**/*.tsx",
-    "src/**/*.ts",
-    "src/index.js"
+    "src/**/*"
   ],
   "exclude": [
-    "dist"
+    "node_modules"
   ]
 }

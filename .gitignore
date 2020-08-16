@@ -4,3 +4,8 @@ package-lock.json
 yarn.lock
 
 dist
+
+lib/
+esm/
+.cache
+.DS_Store
