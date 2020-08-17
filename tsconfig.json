@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
     "lib": ["es2018", "dom"],
     "target": "es5",
-    "module": "commonjs",
+    "module": "esnext",
     "jsx": "react",
     "jsxFactory": "h",
     "moduleResolution": "node",
