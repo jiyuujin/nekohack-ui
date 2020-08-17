@@ -1,7 +1,8 @@
-import { h, RenderableProps } from 'preact'
-import { css } from 'preact-emotion'
+import * as React from 'react'
+import { FC } from 'react'
+import styled from 'styled-components'
 
-const text = css`
+const LabelStyle = styled.div`
     display: inline-block;
     padding: 0.5rem 0.75rem;
     margin: 0.25rem;
@@ -16,10 +17,10 @@ const text = css`
     }
 `
 
-export default function Label(props: RenderableProps<{}>) {
-    return (
-        <div>
-            <div className={text}>{props.children}</div>
-        </div>
-    )
+export type LabelProps = {
+    children: React.ReactNode
+}
+
+export const Label: FC<LabelProps> = ({ children }) => {
+    return <LabelStyle>{children}</LabelStyle>
 }

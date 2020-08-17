@@ -1,7 +1,8 @@
-import { storiesOf } from '@storybook/preact'
-import { h } from 'preact'
+import { storiesOf } from '@storybook/react'
 
-import Select from '../components/select'
+import * as React from 'react'
+
+import { Select } from '../components/select'
 
 const options = [
     {

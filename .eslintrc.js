@@ -13,7 +13,10 @@ module.exports = {
     },
     settings: {
         react: {
-            pragma: 'h'
+            version: 'detect'
         }
+    },
+    rules: {
+        'react/prop-types': 'off'
     }
 }

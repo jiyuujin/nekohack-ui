@@ -1,14 +1,15 @@
-import { storiesOf } from '@storybook/preact'
-import { h } from 'preact'
+import { storiesOf } from '@storybook/react'
 
-import Input from '../components/input'
+import * as React from 'react'
+
+import { Input } from '../components/input'
 
 const update = (text: string) => {
     console.log(text)
 }
 
 storiesOf('Element', module)
-    .add('Text Input', () => <Input value="Input" onInput={update} />)
+    .add('Text Input', () => <Input value="Input" onChange={update} />)
     .add('Password Input', () => (
-        <Input value="Input" password onInput={update} />
+        <Input value="Input" password onChange={update} />
     ))

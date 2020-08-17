@@ -1,5 +1,3 @@
-import { h, render } from 'preact'
-
 import Button from './components/button'
 import Input from './components/input'
 import Label from './components/label'

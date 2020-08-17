@@ -5,9 +5,11 @@
     "target": "es5",
     "module": "commonjs",
     "jsx": "react",
-    "jsxFactory": "h",
     "moduleResolution": "node",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": [
+      "react"
+    ]
   },
   "include": [
     "src/**/*"

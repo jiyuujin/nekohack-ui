@@ -1,7 +1,8 @@
-import { h, RenderableProps } from 'preact'
-import { css } from 'preact-emotion'
+import * as React from 'react'
+import { FC } from 'react'
+import styled from 'styled-components'
 
-const text = css`
+const InputStyle = styled.input`
     appearance: none;
     background: transparent;
     padding: 0.8rem 0.2rem;
@@ -44,27 +45,29 @@ const text = css`
     }
 `
 
-export default function Input(
-    props: RenderableProps<{
-        value: string
-        placeholder?: string
-        password?: boolean
-        onInput: Function
-    }>
-) {
+export type InputProps = {
+    value: string
+    placeholder?: string
+    password?: boolean
+    onChange: Function
+}
+
+export const Input: FC<InputProps> = ({
+    value,
+    placeholder,
+    password,
+    onChange,
+}) => {
     const handleInput = (e: any) => {
-        props.onInput(e.target.value)
+        onChange(e.target.value)
     }
 
     return (
-        <div>
-            <input
-                value={props.value}
-                placeholder={props.placeholder}
-                type={!props.password ? 'text' : 'password'}
-                className={text}
-                onInput={handleInput}
-            />
-        </div>
+        <InputStyle
+            value={value}
+            placeholder={placeholder}
+            type={!password ? 'text' : 'password'}
+            onChange={handleInput}
+        />
     )
 }
