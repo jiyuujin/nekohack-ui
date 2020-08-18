@@ -1,0 +1,41 @@
+# CHANGELOG
+
+## `v0.2.0`
+
+### [feat]
+Use React instead of Preact
+
+## `v0.1.6`
+
+### [bugfix]
+Reset dependencies
+
+## `v0.1.5`
+
+### [bugfix]
+Change tsc build
+
+## `v0.1.4`
+
+### [bugfix]
+Change format in build options
+
+## `v0.1.3`
+
+### [bugfix]
+Change build options
+
+## `v0.1.2`
+
+### [bugfix]
+Reset dependencies
+
+## `v0.1.1`
+
+### [bugfix]
+Set peerDependencies
+
+## `v0.1.0`
+
+### [feat]
+Created UI Components based on Preact
