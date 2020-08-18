@@ -1,7 +1,8 @@
-import { h, RenderableProps } from 'preact'
-import { css } from 'preact-emotion'
+import * as React from 'react'
+import { FC } from 'react'
+import styled from 'styled-components'
 
-const selectWrapper = css`
+const SelectWrapperStyle = styled.div`
     position: relative;
     display: inline-block;
 
@@ -20,7 +21,7 @@ const selectWrapper = css`
     }
 `
 
-const options = css`
+const SelectStyle = styled.select`
     appearance: none;
     background: transparent;
     padding: 0.8rem 2.8rem 0.8rem 0.2rem;
@@ -37,24 +38,24 @@ const options = css`
     }
 `
 
-export default function Select(
-    props: RenderableProps<{
-        options: Array<{
-            value: number
-            text: string
-        }>
+export type SelectProps = {
+    options: Array<{
         value: number
-        onChange: Function
+        text: string
     }>
-) {
+    value: number
+    onChange: Function
+}
+
+export const Select: FC<SelectProps> = ({ options, value, onChange }) => {
     const handleChange = (e: any) => {
-        props.onChange(e.target.value)
+        onChange(e.target.value)
     }
 
     return (
-        <div className={selectWrapper}>
-            <select className={options} onChange={handleChange}>
-                {props.options.map((o: { value: number; text: string }) => {
+        <SelectWrapperStyle>
+            <SelectStyle onChange={handleChange}>
+                {options.map((o: { value: number; text: string }) => {
                     return (
                         <option
                             key={o.value}
@@ -65,7 +66,7 @@ export default function Select(
                         </option>
                     )
                 })}
-            </select>
-        </div>
+            </SelectStyle>
+        </SelectWrapperStyle>
     )
 }

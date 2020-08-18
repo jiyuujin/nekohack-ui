@@ -1,7 +1,8 @@
-import { h, RenderableProps } from 'preact'
-import { css } from 'preact-emotion'
+import * as React from 'react'
+import { FC } from 'react'
+import styled from 'styled-components'
 
-const text = css`
+const ButtonStyle = styled.button`
     display: inline-flex;
     align-items: center;
     padding: 0.8rem;
@@ -16,16 +17,15 @@ const text = css`
     color: #000;
 `
 
-export default function Button(props: RenderableProps<{ onClick: Function }>) {
+export type ButtonProps = {
+    children: React.ReactNode
+    onClick: Function
+}
+
+export const Button: FC<ButtonProps> = ({ children, onClick }) => {
     const handleClick = (e: any) => {
-        props.onClick()
+        onClick()
     }
 
-    return (
-        <div>
-            <button className={text} onClick={handleClick}>
-                {props.children}
-            </button>
-        </div>
-    )
+    return <ButtonStyle onClick={handleClick}>{children}</ButtonStyle>
 }
