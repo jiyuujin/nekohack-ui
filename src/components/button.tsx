@@ -27,9 +27,5 @@ export const Button: FC<ButtonProps> = ({ children, onClick }) => {
         onClick()
     }
 
-    return (
-        <ButtonStyle onClick={handleClick}>
-            {children}
-        </ButtonStyle>
-    )
+    return <ButtonStyle onClick={handleClick}>{children}</ButtonStyle>
 }
