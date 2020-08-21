@@ -5,6 +5,7 @@
     "module": "esnext",
     "jsx": "react",
     "moduleResolution": "node",
+    "declaration": true,
     "skipLibCheck": true,
     "types": [
       "react"

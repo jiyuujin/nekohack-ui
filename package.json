@@ -16,7 +16,7 @@
     "build:lib": "tsc -p tsconfig.build.json",
     "build:esm": "tsc -p tsconfig.esm.build.json",
     "build": "npm run clear && run-s build:lib build:esm",
-    "clear": "rm -rf .dist/",
+    "clear": "rm -rf esm/ lib/",
     "lint": "eslint ./ --ext .ts,.tsx",
     "lint:fix": "eslint ./ --ext .ts,.tsx --fix"
   },
