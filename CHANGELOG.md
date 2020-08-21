@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v0.2.1`
+
+### [feat]
+Set display name
+
 ## `v0.2.0`
 
 ### [feat]
