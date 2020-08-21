@@ -1,8 +1,13 @@
 # CHANGELOG
 
+## `v0.2.3`
+
+### [bugfix]
+Set type declaration
+
 ## `v0.2.2`
 
-### [feat]
+### [bugfix]
 Fix minimum bugs
 
 ## `v0.2.1`
