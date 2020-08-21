@@ -70,3 +70,5 @@ export const Select: FC<SelectProps> = ({ options, value, onChange }) => {
         </SelectWrapperStyle>
     )
 }
+
+Select.displayName = 'NekoSelect'

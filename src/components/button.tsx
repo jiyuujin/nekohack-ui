@@ -29,3 +29,5 @@ export const Button: FC<ButtonProps> = ({ children, onClick }) => {
 
     return <ButtonStyle onClick={handleClick}>{children}</ButtonStyle>
 }
+
+Button.displayName = 'NekoButton'

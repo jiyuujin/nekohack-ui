@@ -71,3 +71,5 @@ export const Input: FC<InputProps> = ({
         />
     )
 }
+
+Input.displayName = 'NekoInput'
