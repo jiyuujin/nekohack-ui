@@ -7,9 +7,21 @@ import { Input } from '../components/input'
 storiesOf('Element', module)
     .add('Text Input', () => {
         const [value, setValue] = React.useState('Input')
-        return <Input value={value} onChange={setValue} />
+        return (
+            <>
+                {value}
+                <br/>
+                <Input value={value} onChange={setValue} />
+            </>
+        )
     })
     .add('Password Input', () => {
         const [value, setValue] = React.useState('Input')
-        return <Input value={value} password onChange={setValue} />
+        return (
+            <>
+                {value}
+                <br/>
+                <Input value={value} password onChange={setValue} />
+            </>
+        )
     })

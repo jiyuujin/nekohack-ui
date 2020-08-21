@@ -19,10 +19,14 @@ const options = [
     },
 ]
 
-const update = (value: number) => {
-    console.log(value)
-}
-
-storiesOf('Element', module).add('Select', () => (
-    <Select options={options} value={0} onChange={update} />
-))
+storiesOf('Element', module).add('Select', () => {
+    const [value, setValue] = React.useState(1)
+    return (
+        <>
+            {value}
+            {options.find(o => o.value === Number(value))?.text}
+            <br/>
+            <Select options={options} value={value} onChange={setValue} />
+        </>
+    )
+})
