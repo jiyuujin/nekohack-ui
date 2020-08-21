@@ -1,6 +1,4 @@
-import { Button } from './components/button'
-import { Input } from './components/input'
-import { Label } from './components/label'
-import { Select } from './components/select'
-
-export default { Button, Input, Label, Select }
+export { Button } from './components/button'
+export { Input } from './components/input'
+export { Label } from './components/label'
+export { Select } from './components/select'
