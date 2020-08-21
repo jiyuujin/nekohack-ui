@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v0.2.2`
+
+### [feat]
+Fix minimum bugs
+
 ## `v0.2.1`
 
 ### [feat]
