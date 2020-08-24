@@ -6,9 +6,11 @@
     "jsx": "react",
     "moduleResolution": "node",
     "declaration": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "types": [
-      "react"
+      "react",
+      "jest"
     ]
   },
   "include": [
