@@ -22,18 +22,20 @@ const options = [
 ]
 
 const setValue = () => {
-  console.log('updated')
+    console.log('updated')
 }
 
 describe('Select', () => {
-  let wrapper
+    let wrapper
 
-  beforeEach(() => {
-    wrapper = shallow(<NekoSelect options={options} value={1} onChange={setValue} />)
-  })
+    beforeEach(() => {
+        wrapper = shallow(
+            <NekoSelect options={options} value={1} onChange={setValue} />
+        )
+    })
 
-  it('should render without errors', () => {
-    expect(wrapper).toBeTruthy()
-    wrapper.update()
-  })
+    it('should render without errors', () => {
+        expect(wrapper).toBeTruthy()
+        wrapper.update()
+    })
 })
