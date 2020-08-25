@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.0.0-beta.0`
+
+### [feat]
+Update readme
+
 ## `v0.2.3`
 
 ### [bugfix]
