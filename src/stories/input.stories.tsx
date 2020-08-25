@@ -10,7 +10,7 @@ storiesOf('Element', module)
         return (
             <>
                 {value}
-                <br/>
+                <br />
                 <Input value={value} onChange={setValue} />
             </>
         )
@@ -20,7 +20,7 @@ storiesOf('Element', module)
         return (
             <>
                 {value}
-                <br/>
+                <br />
                 <Input value={value} password onChange={setValue} />
             </>
         )

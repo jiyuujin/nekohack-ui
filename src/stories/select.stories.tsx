@@ -24,8 +24,8 @@ storiesOf('Element', module).add('Select', () => {
     return (
         <>
             {value}
-            {options.find(o => o.value === Number(value))?.text}
-            <br/>
+            {options.find((o) => o.value === Number(value))?.text}
+            <br />
             <Select options={options} value={value} onChange={setValue} />
         </>
     )
