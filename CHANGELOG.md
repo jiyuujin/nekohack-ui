@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.0.0-beta.1`
+
+### [update]
+Update component name
+
 ## `v1.0.0-beta.0`
 
 ### [feat]
