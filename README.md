@@ -1,6 +1,8 @@
-# nekohack-ui
+<p align="center">
+  <a href="https://npmjs.com/package/nekohack-ui"><img src='https://github.com/jiyuujin/nekohack-ui/blob/master/nekohack-ui.svg?sanitize=true' alt="nekohack-ui" title="nekohack-ui"/></a>　
+</p>
 
-<p align="left">
+<p align="center">
   <a href="https://npmjs.com/package/nekohack-ui">
     <img alt="" src="https://img.shields.io/npm/v/nekohack-ui/latest.svg?style=flat-square">
   </a>
@@ -31,7 +33,7 @@ yarn add react react-dom styled-components
 ```tsx
 import * as React from 'react'
 
-import { Button as NekoButton } from '../components/button'
+import { NekoButton } from 'nekohack-ui'
 
 export const App = () => {
     const submit = () => {
@@ -55,7 +57,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { Input as NekoInput } from '../components/input'
+import { NekoInput } from 'nekohack-ui'
 
 export const App = () => {
     const [value, setValue] = React.useState('Input')
@@ -79,7 +81,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { Label as NekoLabel } from '../components/label'
+import { NekoLabel } from 'nekohack-ui'
 
 export const App = () => {
     return (
@@ -99,7 +101,7 @@ export const App = () => {
 ```tsx
 import * as React from 'react'
 
-import { Select as NekoSelect } from '../components/select'
+import { NekoSelect } from 'nekohack-ui'
 
 const options = [
     {
