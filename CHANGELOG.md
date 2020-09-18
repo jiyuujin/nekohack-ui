@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.0.0-rc.0`
+
+### [update]
+Update icon
+
 ## `v1.0.0-beta.1`
 
 ### [update]
