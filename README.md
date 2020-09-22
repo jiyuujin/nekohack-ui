@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://npmjs.com/package/nekohack-ui"><img src='https://github.com/jiyuujin/nekohack-ui/blob/master/nekohack-ui.svg?sanitize=true' alt="nekohack-ui" title="nekohack-ui"/></a>　
+  <a href="https://npmjs.com/package/nekohack-ui"><img src="https://i.imgur.com/jGQJLC5.png" alt="nekohack-ui" title="nekohack-ui"/></a>　
 </p>
 
 <p align="center">

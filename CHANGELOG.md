@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## `v1.0.0`
+
+### [update]
+- First Major Update
+- Update icon
+
 ## `v1.0.0-rc.0`
 
 ### [update]
