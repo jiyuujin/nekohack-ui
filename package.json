@@ -10,6 +10,19 @@
     "esm",
     "lib"
   ],
+  "license": "MIT",
+  "author": "jiyuujin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiyuujin/nekohack-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiyuujin/nekohack-ui/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
   "scripts": {
     "storybook": "start-storybook -p 6001 -c .storybook",
     "build-storybook": "build-storybook",
