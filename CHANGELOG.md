@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.1.0-beta.0`
+
+### [feat]
+Extend input ( `Suggestible input`, `Textarea` )
+
 ## `v1.0.1`
 
 ### [update]
