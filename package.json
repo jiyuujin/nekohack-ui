@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
-    "@babel/preset-react": "7.12.1",
+    "@babel/preset-react": "7.12.5",
     "@babel/preset-typescript": "7.12.1",
     "@nekohack/eslint-config-react": "0.3.0",
     "@storybook/addon-actions": "6.0.28",
