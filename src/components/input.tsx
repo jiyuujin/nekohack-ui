@@ -1,5 +1,4 @@
-import * as React from 'react'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import styled from 'styled-components'
 
 const InputStyle = styled.input`
@@ -93,8 +92,8 @@ export const Input: FC<InputProps> = ({
     multiple = false,
     onChange,
 }) => {
-    let [suggests, setSuggests] = React.useState([])
-    let [isShow, setIsShow] = React.useState(targets.length !== 0)
+    let [suggests, setSuggests] = useState([])
+    let [isShow, setIsShow] = useState(targets.length !== 0)
 
     const handleInput = (e: any) => {
         setIsShow(true)
