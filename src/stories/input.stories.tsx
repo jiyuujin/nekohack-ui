@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 
-import * as React from 'react'
+import { useState } from 'react'
 
 import { Input } from '../components/input'
 
@@ -10,7 +10,7 @@ const escape = (str: string) => {
 
 storiesOf('Element', module)
     .add('Text Input', () => {
-        const [value, setValue] = React.useState('Input')
+        const [value, setValue] = useState('Input')
         return (
             <>
                 {value}
@@ -20,7 +20,7 @@ storiesOf('Element', module)
         )
     })
     .add('Password Input', () => {
-        const [value, setValue] = React.useState('Input')
+        const [value, setValue] = useState('Input')
         return (
             <>
                 {value}
@@ -30,7 +30,7 @@ storiesOf('Element', module)
         )
     })
     .add('Suggestible Input', () => {
-        const [value, setValue] = React.useState('')
+        const [value, setValue] = useState('')
         return (
             <>
                 {value}
@@ -60,7 +60,7 @@ storiesOf('Element', module)
         )
     })
     .add('Textarea', () => {
-        const [value, setValue] = React.useState('Input')
+        const [value, setValue] = useState('Input')
         return (
             <>
                 {escape(value)}
