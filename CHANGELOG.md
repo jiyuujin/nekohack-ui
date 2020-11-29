@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.1.0`
+
+### [feat]
+Update plugins
+
 ## `v1.1.0-beta.0`
 
 ### [feat]
