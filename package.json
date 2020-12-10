@@ -37,9 +37,9 @@
     "lint:fix": "eslint ./ --ext .ts,.tsx --fix"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
-    "@babel/preset-env": "7.12.7",
-    "@babel/preset-react": "7.12.7",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.10",
+    "@babel/preset-react": "7.12.10",
     "@babel/preset-typescript": "7.12.7",
     "@nekohack/eslint-config-react": "0.3.0",
     "@storybook/addon-actions": "6.1.10",
