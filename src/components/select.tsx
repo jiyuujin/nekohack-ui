@@ -38,6 +38,9 @@ const SelectStyle = styled.select`
 `
 
 export type SelectProps = {
+    id?: string
+    label?: string
+    explain?: string
     options: Array<{
         value: number
         text: string
@@ -46,21 +49,29 @@ export type SelectProps = {
     onChange: Function
 }
 
-export const Select: FC<SelectProps> = ({ options, value, onChange }) => {
+export const Select: FC<SelectProps> = ({
+    id,
+    label,
+    explain,
+    options,
+    value,
+    onChange,
+}) => {
     const handleChange = (e: any) => {
         onChange(e.target.value)
     }
 
     return (
         <SelectWrapperStyle>
-            <SelectStyle onChange={handleChange}>
+            <SelectStyle
+                id={id}
+                aria-label={label}
+                aria-labelledby={explain}
+                onChange={handleChange}
+            >
                 {options.map((o: { value: number; text: string }) => {
                     return (
-                        <option
-                            key={o.value}
-                            value={o.value}
-                            tabIndex={o.value}
-                        >
+                        <option key={o.value} value={o.value}>
                             {o.text}
                         </option>
                     )

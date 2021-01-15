@@ -1,5 +1,8 @@
 module.exports = {
-    extends: ['@nekohack/eslint-config-react'],
+    extends: [
+        '@nekohack/eslint-config-react',
+        'plugin:jsx-a11y/recommended'
+    ],
     plugins: ['@typescript-eslint'],
     root: true,
     env: { node: true, es6: true },
