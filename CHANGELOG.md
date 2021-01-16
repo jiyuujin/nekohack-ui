@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## `v2.0.0-alpha.0`
+
+### [feat]
+Accessibility setup
+
+## `v1.2.0`
+
+### [feat]
+Update peerDependencies to React v17
+
 ## `v1.1.0`
 
 ### [feat]
