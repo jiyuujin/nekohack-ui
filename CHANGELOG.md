@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## `v1.2.0-beta.1`
+## `v1.2.0`
 
 ### [feat]
 Update peerDependencies to React v17
