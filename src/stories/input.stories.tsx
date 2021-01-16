@@ -15,7 +15,13 @@ storiesOf('Element', module)
             <>
                 {value}
                 <br />
-                <Input value={value} onChange={setValue} />
+                <Input
+                    id="input"
+                    label="確定する"
+                    explain="input abc"
+                    value={value}
+                    onChange={setValue}
+                />
             </>
         )
     })
@@ -25,7 +31,14 @@ storiesOf('Element', module)
             <>
                 {value}
                 <br />
-                <Input value={value} password onChange={setValue} />
+                <Input
+                    id="input"
+                    label="確定する"
+                    explain="input abc"
+                    value={value}
+                    password
+                    onChange={setValue}
+                />
             </>
         )
     })
@@ -36,6 +49,9 @@ storiesOf('Element', module)
                 {value}
                 <br />
                 <Input
+                    id="input"
+                    label="確定する"
+                    explain="input abc"
                     value={value}
                     targets={[
                         'Evergreen',
@@ -65,7 +81,15 @@ storiesOf('Element', module)
             <>
                 {escape(value)}
                 <br />
-                <Input value={value} rows={10} multiple onChange={setValue} />
+                <Input
+                    id="input"
+                    label="確定する"
+                    explain="input abc"
+                    value={value}
+                    rows={10}
+                    multiple
+                    onChange={setValue}
+                />
             </>
         )
     })
