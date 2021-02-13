@@ -4,9 +4,11 @@ on:
   push:
     branches:
     - next2
+    - dev
   pull_request:
     branches:
     - next2
+    - dev
 
 jobs:
   build:
