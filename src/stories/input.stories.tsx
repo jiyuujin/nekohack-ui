@@ -17,6 +17,7 @@ storiesOf('Element', module)
                 <br />
                 <Input
                     id="input"
+                    role="textbox"
                     label="確定する"
                     explain="input abc"
                     value={value}
@@ -50,6 +51,7 @@ storiesOf('Element', module)
                 <br />
                 <Input
                     id="input"
+                    role="textbox"
                     label="確定する"
                     explain="input abc"
                     value={value}
@@ -83,6 +85,7 @@ storiesOf('Element', module)
                 <br />
                 <Input
                     id="input"
+                    role="textbox"
                     label="確定する"
                     explain="input abc"
                     value={value}

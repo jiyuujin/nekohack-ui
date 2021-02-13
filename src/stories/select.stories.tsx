@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react'
 import { useState } from 'react'
 
 import { Select } from '../components/select'
-import { Input } from '../components/input'
 
 const options = [
     {
