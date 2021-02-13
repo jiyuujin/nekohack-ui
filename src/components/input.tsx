@@ -75,6 +75,7 @@ const SuggestListItemStyle = styled.li`
 
 export type InputProps = {
     id?: string
+    role?: string
     label?: string
     explain?: string
     value: string
@@ -88,6 +89,7 @@ export type InputProps = {
 
 export const Input: FC<InputProps> = ({
     id,
+    role,
     label,
     explain,
     value,
@@ -124,6 +126,7 @@ export const Input: FC<InputProps> = ({
                 <>
                     <InputStyle
                         id={id}
+                        role={role}
                         aria-label={label}
                         aria-labelledby={explain}
                         value={value}
