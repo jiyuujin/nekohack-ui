@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.0.0`
+
+### [update]
+Official release included accessibility
+
 ## `v2.0.0-alpha.1`
 
 ### [update]

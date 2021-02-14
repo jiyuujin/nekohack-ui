@@ -71,6 +71,10 @@ export const App = () => {
 
 | # | Type | Default |
 |:---|:---|:---|
+| id | `String` | `` |
+| role | `String` | `` |
+| label | `String` | `` |
+| explain | `String` | `` |
 | value | `String` | `` |
 | placeholder | `String` | `` |
 | password | `String` | `` |
@@ -130,6 +134,9 @@ export const App = () => {
 
 | # | Type | Default |
 |:---|:---|:---|
+| id | `String` | `` |
+| label | `String` | `` |
+| explain | `String` | `` |
 | options | `Array<{ value: number text: string}>` | `` |
 | value | `Number` | `` |
 | onChange | `Function` | `` |
