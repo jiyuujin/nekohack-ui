@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## `v2.0.0-alpha.1`
+
+### [update]
+Update info
+
+## `v2.0.0-alpha.0`
+
+### [update]
+Accessibility setup
+
 ## `v1.2.0`
 
 ### [feat]

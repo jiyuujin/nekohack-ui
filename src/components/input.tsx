@@ -74,6 +74,10 @@ const SuggestListItemStyle = styled.li`
 `
 
 export type InputProps = {
+    id?: string
+    role?: string
+    label?: string
+    explain?: string
     value: string
     placeholder?: string
     password?: boolean
@@ -84,6 +88,10 @@ export type InputProps = {
 }
 
 export const Input: FC<InputProps> = ({
+    id,
+    role,
+    label,
+    explain,
     value,
     placeholder = '',
     password = false,
@@ -117,6 +125,10 @@ export const Input: FC<InputProps> = ({
             {!multiple ? (
                 <>
                     <InputStyle
+                        id={id}
+                        role={role}
+                        aria-label={label}
+                        aria-labelledby={explain}
                         value={value}
                         placeholder={placeholder}
                         type={!password ? 'text' : 'password'}
@@ -138,6 +150,9 @@ export const Input: FC<InputProps> = ({
                 </>
             ) : (
                 <TextareaStyle
+                    id={id}
+                    aria-label={label}
+                    aria-labelledby={explain}
                     value={value}
                     rows={rows}
                     onChange={handleInput}

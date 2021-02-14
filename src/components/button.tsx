@@ -26,7 +26,11 @@ export const Button: FC<ButtonProps> = ({ children, onClick }) => {
         onClick()
     }
 
-    return <ButtonStyle onClick={handleClick}>{children}</ButtonStyle>
+    return (
+        <ButtonStyle role="button" aria-pressed="true" onClick={handleClick}>
+            {children}
+        </ButtonStyle>
+    )
 }
 
 Button.displayName = 'NekoButton'
