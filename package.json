@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
-    "@babel/preset-env": "7.12.13",
+    "@babel/preset-env": "7.12.17",
     "@babel/preset-react": "7.12.7",
     "@babel/preset-typescript": "7.12.13",
     "@nekohack/eslint-config-react": "0.3.0",
