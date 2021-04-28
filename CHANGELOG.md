@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.0.1`
+
+### [update]
+Update info
+
 ## `v2.0.0`
 
 ### [update]
