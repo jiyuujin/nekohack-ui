@@ -1,8 +1,6 @@
-<p align="center">
-  <a href="https://npmjs.com/package/nekohack-ui"><img src="https://i.imgur.com/jGQJLC5.png" alt="nekohack-ui" title="nekohack-ui"/></a>　
-</p>
+# nekohack-ui
 
-<p align="center">
+<p align="left">
   <a href="https://npmjs.com/package/nekohack-ui">
     <img alt="" src="https://img.shields.io/npm/v/nekohack-ui/latest.svg?style=flat-square">
   </a>
@@ -78,6 +76,7 @@ export const App = () => {
 | value | `String` | `` |
 | placeholder | `String` | `` |
 | password | `String` | `` |
+| targets | `Array<String>` | `[]` |
 | onChange | `Function` | `` |
 
 ### Label
