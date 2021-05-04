@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.0.2`
+
+### [bugfix]
+Add types in button child
+
 ## `v2.0.1`
 
 ### [update]
