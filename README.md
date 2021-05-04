@@ -47,7 +47,7 @@ export const App = () => {
 
 | # | Type | Default |
 |:---|:---|:---|
-| children | `React.ReactNode` | `` |
+| children | `React.ReactNode` `Array<React.ReactNode>` | `` |
 | onClick | `Function` | `` |
 
 ### Input

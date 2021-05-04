@@ -17,7 +17,7 @@ const ButtonStyle = styled.button`
 `
 
 export type ButtonProps = {
-    children: React.ReactNode
+    children: React.ReactNode | Array<React.ReactNode>
     onClick: Function
 }
 
