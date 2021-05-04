@@ -1,6 +1,6 @@
 {
   "name": "nekohack-ui",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "private": false,
   "main": "lib/index.js",
@@ -37,7 +37,7 @@
     "lint:fix": "eslint ./ --ext .ts,.tsx --fix"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
+    "@babel/core": "7.14.0",
     "@babel/preset-env": "7.12.17",
     "@babel/preset-react": "7.12.7",
     "@babel/preset-typescript": "7.12.13",
