@@ -8,5 +8,13 @@
                 "jsxPragma": "h"
             }
         ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-private-methods",
+            {
+                "loose": true
+            }
+        ]
     ]
 }
