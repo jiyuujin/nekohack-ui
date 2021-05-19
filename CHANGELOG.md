@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.1.0`
+
+### [update]
+Update storybook, react and styled-components plugins
+
 ## `v2.0.2`
 
 ### [bugfix]
