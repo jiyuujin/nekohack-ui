@@ -139,3 +139,64 @@ export const App = () => {
 | options | `Array<{ value: number text: string}>` | `` |
 | value | `Number` | `` |
 | onChange | `Function` | `` |
+
+## Modules
+
+### Accordion
+
+```tsx
+import * as React from 'react'
+
+import { NekoAccordion } from 'nekohack-ui'
+
+type Item = {
+    itemId: number
+    itemName: string
+    backgroundColor: string
+    color: string
+}
+
+const singleItemList: Item[] = [
+    {
+        itemId: 0,
+        itemName: 'Web',
+        backgroundColor: '#0033ff',
+        color: '#fff',
+    },
+    {
+        itemId: 1,
+        itemName: 'HTML5',
+        backgroundColor: '#0099ff',
+        color: '#000',
+    },
+    {
+        itemId: 2,
+        itemName: 'CSS',
+        backgroundColor: '#00ff99',
+        color: '#000',
+    },
+]
+
+export const App = () => {
+    const handleItemClass = () => {
+        //
+    }
+    return (
+        <NekoAccordion
+            labelText="Front"
+            title="Markup"
+            items={singleItemList}
+            updateItemClass={handleItemClass}
+        />
+    )
+}
+```
+
+#### Props
+
+| # | Type | Default |
+|:---|:---|:---|
+| labelText | `String` | `` |
+| title | `String` | `` |
+| items | `Array<Item>` | `` |
+| updateItemClass | `Function` | `` |

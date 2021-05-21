@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.2.0`
+
+### [feat]
+Add accordion module
+
 ## `v2.1.0`
 
 ### [update]
