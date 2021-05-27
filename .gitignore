@@ -12,3 +12,4 @@ esm/
 .DS_Store
 
 coverage
+.reg
