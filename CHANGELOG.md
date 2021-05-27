@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## `v2.3.0`
+
+### [update]
+- Screenshot by storycap, get differences by reg-suit
+- Update for Jest to v27
+
 ## `v2.2.0`
 
 ### [feat]
