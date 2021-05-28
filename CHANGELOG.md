@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.4.0`
+
+### [update]
+Update for ESLint, TypeScript-ESLint, and type definition
+
 ## `v2.3.0`
 
 ### [update]
