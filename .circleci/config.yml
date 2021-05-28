@@ -1,0 +1,42 @@
+version: 2.1
+
+executors:
+  default:
+    docker:
+      - image: regviz/node-xcb
+
+jobs:
+  build:
+    executor: default
+    working_directory: ~/workspace
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: |
+            yarn install
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Take screenshots
+          command: |
+            yarn screenshot
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: dev
