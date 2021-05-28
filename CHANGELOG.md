@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.6.0`
+
+### [update]
+Update for bundler plugins
+
 ## `v2.5.0`
 
 ### [feat]
