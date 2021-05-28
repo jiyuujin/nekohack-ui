@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.5.0`
+
+### [feat]
+Screenshot by storycap, get differences by reg-suit in Circle CI
+
 ## `v2.4.0`
 
 ### [update]
