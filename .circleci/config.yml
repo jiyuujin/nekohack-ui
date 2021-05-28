@@ -32,6 +32,11 @@ jobs:
           command: |
             yarn screenshot
 
+      - run:
+          name: Regression Test
+          command: |
+            yarn regression
+
 workflows:
   version: 2
   build:
