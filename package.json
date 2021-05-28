@@ -42,7 +42,7 @@
     "@babel/core": "7.12.9",
     "@babel/plugin-proposal-private-methods": "^7.13.0",
     "@babel/preset-env": "7.12.17",
-    "@babel/preset-react": "7.12.7",
+    "@babel/preset-react": "7.13.13",
     "@babel/preset-typescript": "7.12.13",
     "@nekohack/eslint-config-react": "0.3.0",
     "@storybook/addon-a11y": "^6.2.9",
