@@ -1,6 +1,6 @@
 {
   "name": "nekohack-ui",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "",
   "private": false,
   "main": "lib/index.js",
