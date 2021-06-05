@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.7.0`
+
+### [update]
+Update for Babel plugins
+
 ## `v2.6.0`
 
 ### [update]
