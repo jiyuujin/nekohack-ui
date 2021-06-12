@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v2.8.0`
+
+### [update]
+Update for Jest plugins
+
 ## `v2.7.0`
 
 ### [update]
