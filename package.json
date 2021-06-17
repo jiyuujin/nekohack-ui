@@ -39,7 +39,7 @@
     "lint:fix": "eslint ./ --ext .ts,.tsx --fix"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
+    "@babel/core": "7.14.6",
     "@babel/plugin-proposal-private-methods": "7.13.0",
     "@babel/preset-env": "7.14.4",
     "@babel/preset-react": "7.13.13",
