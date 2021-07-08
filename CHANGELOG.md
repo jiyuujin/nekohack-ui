@@ -1,9 +1,54 @@
 # CHANGELOG
 
+## `v3.0.0-alpha.0`
+
+### [update]
+- Update manual for dependencies
+- Update plugins
+
+#### Major update
+- sass-loader
+
+#### Storybook + reg-suit plugins
+- @storybook/addon-a11y
+- @storybook/addon-actions
+- @storybook/react
+- puppeteer
+- reg-keygen-git-hash-plugin
+- reg-notify-github-plugin
+- reg-publish-s3-plugin
+- reg-suit
+
+#### Babel plugins
+- @babel/core
+- @babel/plugin-proposal-private-methods
+- @babel/preset-env
+- @babel/preset-react
+- @babel/preset-typescript
+- babel-jest
+
+#### ESLint, type definition
+- @types/jest
+- @types/node
+- @types/prop-types
+- @types/react
+- @types/react-dom
+- @types/styled-components
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
+- eslint
+
+#### Other plugins
+- jest
+- mini-css-extract-plugin
+- sass
+- ts-loader
+- typescript
+
 ## `v2.9.0`
 
 ### [update]
-Update for ESLint, TypeScript-ESLint, and type definition
+Update for ESLint, type definition
 
 ## `v2.8.0`
 
