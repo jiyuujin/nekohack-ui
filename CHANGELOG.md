@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v3.0.0-alpha.1`
+
+### [update]
+- Update plugins
+
 ## `v3.0.0-alpha.0`
 
 ### [update]
