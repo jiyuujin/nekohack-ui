@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v1.2.1`
+
+### [bugfix]
+Fix button types
+
 ## `v1.2.0`
 
 ### [feat]
