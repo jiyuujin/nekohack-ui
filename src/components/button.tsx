@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const ButtonStyle = styled.button`
@@ -17,11 +17,15 @@ const ButtonStyle = styled.button`
 `
 
 export type ButtonProps = {
-    children: React.ReactNode
+    children:
+        | React.ReactChild
+        | React.ReactChild[]
+        | React.ReactChildren
+        | React.ReactChildren[]
     onClick: Function
 }
 
-export const Button: FC<ButtonProps> = ({ children, onClick }) => {
+export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
     const handleClick = (e: any) => {
         onClick()
     }
