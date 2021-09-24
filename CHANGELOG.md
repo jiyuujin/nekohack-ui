@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## `v3.0.0`
+
+### [feat]
+- Decide development policy
+- Update changelog
+
 ## `v3.0.0-alpha.1`
 
 ### [update]
@@ -53,73 +59,79 @@
 ## `v2.9.0`
 
 ### [update]
-Update for ESLint, type definition
+- Update for ESLint, type definition
 
 ## `v2.8.0`
 
 ### [update]
-Update for Jest plugins
+- Update for Jest plugins
 
 ## `v2.7.0`
 
 ### [update]
-Update for Babel plugins
+- Update for Babel plugins
 
 ## `v2.6.0`
 
 ### [update]
-Update for bundler plugins
+- Update for bundler plugins
 
 ## `v2.5.0`
 
 ### [feat]
-Screenshot by storycap, get differences by reg-suit in Circle CI
+- Screenshot by storycap, get differences by reg-suit in Circle CI
 
 ## `v2.4.0`
 
 ### [update]
-Update for ESLint, TypeScript-ESLint, and type definition
+- Update for ESLint, TypeScript-ESLint, and type definition
 
 ## `v2.3.0`
 
-### [update]
+### [feat]
 - Screenshot by storycap, get differences by reg-suit
 - Update for Jest to v27
 
 ## `v2.2.0`
 
 ### [feat]
-Add accordion module
+- Add accordion module
 
 ## `v2.1.0`
 
-### [update]
-Update storybook, react and styled-components plugins
+### [feat]
+- Update for Storybook
+- Update for React and styled-components plugins
 
 ## `v2.0.2`
 
-### [bugfix]
-Add types in button child
+### [update]
+- Add types in button child
 
 ## `v2.0.1`
 
 ### [update]
-Update info
+- Update info
 
 ## `v2.0.0`
 
-### [update]
-Official release included accessibility
+### [feat]
+- Official release included accessibility
 
 ## `v2.0.0-alpha.1`
 
 ### [update]
-Update info
+- Update info
 
 ## `v2.0.0-alpha.0`
 
 ### [update]
-Accessibility setup
+- Accessibility setup
+
+## `v1.2.1`
+
+### [bugfix]
+Fix button types
 
 ## `v1.2.0`
 
