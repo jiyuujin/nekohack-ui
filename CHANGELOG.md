@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v3.0.2`
+
+### [bugfix]
+Un-required button types
+
 ## `v3.0.1`
 
 ### [bugfix]
@@ -132,6 +137,11 @@ Fix button types
 
 ### [update]
 - Accessibility setup
+
+## `v1.2.2`
+
+### [bugfix]
+Un-required button types
 
 ## `v1.2.1`
 

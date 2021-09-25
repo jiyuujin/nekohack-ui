@@ -17,7 +17,7 @@ const ButtonStyle = styled.button`
 `
 
 export type ButtonProps = {
-    children:
+    children?:
         | React.ReactChild
         | React.ReactChild[]
         | React.ReactChildren
