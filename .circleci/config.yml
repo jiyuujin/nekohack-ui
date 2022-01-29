@@ -4,6 +4,7 @@ executors:
   default:
     working_directory: ~/workspace
     docker:
+      - image: circleci/node:14
       - image: regviz/node-xcb
 
 commands:
@@ -11,6 +12,8 @@ commands:
     description: Prepare
     steps:
       - checkout
+
+      - run: sudo apt-get update && sudo apt-get install -y nasm autoconf automake libtool dpkg libpng-dev g++
 
       - restore_cache:
           keys:
