@@ -2,46 +2,57 @@ version: 2.1
 
 executors:
   default:
+    working_directory: ~/workspace
     docker:
       - image: regviz/node-xcb
 
-jobs:
-  build:
-    executor: default
-    working_directory: ~/workspace
+commands:
+  prepare_node_dependency:
+    description: Prepare
     steps:
       - checkout
-
-      - run:
-          name: Install dependencies
-          command: |
-            yarn install
 
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
 
+      - run: yarn install
+
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: yarn build
 
       - run:
           name: Take screenshots
           command: |
             yarn screenshot
 
+  package_and_deploy:
+    description: Deploy
+    steps:
       - run:
           name: Regression Test
           command: |
             yarn regression
 
+jobs:
+  master_build:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - prepare_node_dependency
+      - package_and_deploy
+
 workflows:
   version: 2
-  build:
+  push:
     jobs:
-      - build:
+      - master_build:
           filters:
             branches:
-              only: dev
+              only: main
