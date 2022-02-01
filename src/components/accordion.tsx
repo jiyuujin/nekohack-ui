@@ -26,45 +26,45 @@ const AccordionLabel = styled.div`
 `
 
 export const Accordion = ({
-    labelText,
-    title,
-    items,
-    updateItemClass,
+  labelText,
+  title,
+  items,
+  updateItemClass,
 }: {
     labelText: string
     title: string
     items: Array<Item>
     updateItemClass: Function
 }) => {
-    const getItemName = (id: number) => {
-        let name = ''
-        items.map((item: Item) => {
-            if (item.itemId === id) {
-                name = item.itemName
-            }
-        })
-        return name
-    }
+  const getItemName = (id: number) => {
+    let name = ''
+    items.map((item: Item) => {
+      if (item.itemId === id) {
+        name = item.itemName
+      }
+    })
+    return name
+  }
 
-    return (
+  return (
+    <>
+      {labelText && <AccordionLabel>{labelText}</AccordionLabel>}
+      <AccordionWrapper title={title} itemLength={items.length}>
         <>
-            {labelText && <AccordionLabel>{labelText}</AccordionLabel>}
-            <AccordionWrapper title={title} itemLength={items.length}>
-                <>
-                    {items.map((item: Item, index: number) => {
-                        return (
-                            <ListItems
-                                key={index}
-                                itemId={item['itemId']}
-                                itemName={getItemName(item['itemId'])}
-                                handleClickCallback={updateItemClass}
-                            />
-                        )
-                    })}
-                </>
-            </AccordionWrapper>
+          {items.map((item: Item, index: number) => {
+            return (
+              <ListItems
+                key={index}
+                itemId={item['itemId']}
+                itemName={getItemName(item['itemId'])}
+                handleClickCallback={updateItemClass}
+              />
+            )
+          })}
         </>
-    )
+      </AccordionWrapper>
+    </>
+  )
 }
 
 Accordion.displayName = 'NekoAccordion'

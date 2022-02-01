@@ -6,14 +6,14 @@ Enzyme.configure({ adapter: new Adapter() })
 import { Label as NekoLabel } from '../src/components/label'
 
 describe('Label', () => {
-    let wrapper
+  let wrapper
 
-    beforeEach(() => {
-        wrapper = shallow(<NekoLabel>Label</NekoLabel>)
-    })
+  beforeEach(() => {
+    wrapper = shallow(<NekoLabel>Label</NekoLabel>)
+  })
 
-    it('should render without errors', () => {
-        expect(wrapper).toBeTruthy()
-        wrapper.update()
-    })
+  it('should render without errors', () => {
+    expect(wrapper).toBeTruthy()
+    wrapper.update()
+  })
 })

@@ -26,15 +26,15 @@ export type ButtonProps = {
 }
 
 export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
-    const handleClick = (e: any) => {
-        onClick()
-    }
+  const handleClick = (e: any) => {
+    onClick()
+  }
 
-    return (
-        <ButtonStyle role="button" aria-pressed="true" onClick={handleClick}>
-            {children}
-        </ButtonStyle>
-    )
+  return (
+    <ButtonStyle role="button" aria-pressed="true" onClick={handleClick}>
+      {children}
+    </ButtonStyle>
+  )
 }
 
 Button.displayName = 'NekoButton'

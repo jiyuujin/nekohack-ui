@@ -6,18 +6,18 @@ Enzyme.configure({ adapter: new Adapter() })
 import { Input as NekoInput } from '../src/components/input'
 
 const setValue = () => {
-    console.log('updated')
+  console.log('updated')
 }
 
 describe('Input', () => {
-    let wrapper
+  let wrapper
 
-    beforeEach(() => {
-        wrapper = shallow(<NekoInput value={'Input'} onChange={setValue} />)
-    })
+  beforeEach(() => {
+    wrapper = shallow(<NekoInput value={'Input'} onChange={setValue} />)
+  })
 
-    it('should render without errors', () => {
-        expect(wrapper).toBeTruthy()
-        wrapper.update()
-    })
+  it('should render without errors', () => {
+    expect(wrapper).toBeTruthy()
+    wrapper.update()
+  })
 })

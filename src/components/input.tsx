@@ -88,78 +88,78 @@ export type InputProps = {
 }
 
 export const Input: FC<InputProps> = ({
-    id,
-    role,
-    label,
-    explain,
-    value,
-    placeholder = '',
-    password = false,
-    targets = [],
-    rows = 0,
-    multiple = false,
-    onChange,
+  id,
+  role,
+  label,
+  explain,
+  value,
+  placeholder = '',
+  password = false,
+  targets = [],
+  rows = 0,
+  multiple = false,
+  onChange,
 }) => {
-    let [suggests, setSuggests] = useState([])
-    let [isShow, setIsShow] = useState(targets.length !== 0)
+  let [suggests, setSuggests] = useState([])
+  let [isShow, setIsShow] = useState(targets.length !== 0)
 
-    const handleInput = (e: any) => {
-        setIsShow(true)
-        let newSuggest = []
-        for (const t of targets) {
-            if (t.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1) {
-                newSuggest.push(t)
-            }
-        }
-        setSuggests(newSuggest)
-        onChange(e.target.value)
+  const handleInput = (e: any) => {
+    setIsShow(true)
+    let newSuggest = []
+    for (const t of targets) {
+      if (t.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1) {
+        newSuggest.push(t)
+      }
     }
+    setSuggests(newSuggest)
+    onChange(e.target.value)
+  }
 
-    const handleInputDirectly = (text: string) => {
-        onChange(text)
-        setIsShow(false)
-    }
+  const handleInputDirectly = (text: string) => {
+    onChange(text)
+    setIsShow(false)
+  }
 
-    return (
+  return (
+    <>
+      {!multiple ? (
         <>
-            {!multiple ? (
-                <>
-                    <InputStyle
-                        id={id}
-                        role={role}
-                        aria-label={label}
-                        aria-labelledby={explain}
-                        value={value}
-                        placeholder={placeholder}
-                        type={!password ? 'text' : 'password'}
-                        onChange={handleInput}
-                    />
-                    {isShow && (
-                        <SuggestListStyle>
-                            {value &&
+          <InputStyle
+            id={id}
+            role={role}
+            aria-label={label}
+            aria-labelledby={explain}
+            value={value}
+            placeholder={placeholder}
+            type={!password ? 'text' : 'password'}
+            onChange={handleInput}
+          />
+          {isShow && (
+            <SuggestListStyle>
+              {value &&
                                 suggests.map((s) => (
-                                    <SuggestListItemStyle
-                                        key={s}
-                                        onClick={() => handleInputDirectly(s)}
-                                    >
-                                        {s}
-                                    </SuggestListItemStyle>
+                                  <SuggestListItemStyle
+                                    key={s}
+                                    onClick={() => handleInputDirectly(s)}
+                                  >
+                                    {s}
+                                  </SuggestListItemStyle>
                                 ))}
-                        </SuggestListStyle>
-                    )}
-                </>
-            ) : (
-                <TextareaStyle
-                    id={id}
-                    aria-label={label}
-                    aria-labelledby={explain}
-                    value={value}
-                    rows={rows}
-                    onChange={handleInput}
-                />
-            )}
+            </SuggestListStyle>
+          )}
         </>
-    )
+      ) : (
+        <TextareaStyle
+          id={id}
+          aria-label={label}
+          aria-labelledby={explain}
+          value={value}
+          rows={rows}
+          onChange={handleInput}
+        />
+      )}
+    </>
+  )
 }
 
 Input.displayName = 'NekoInput'

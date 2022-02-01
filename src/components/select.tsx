@@ -50,35 +50,35 @@ export type SelectProps = {
 }
 
 export const Select: FC<SelectProps> = ({
-    id,
-    label,
-    explain,
-    options,
-    value,
-    onChange,
+  id,
+  label,
+  explain,
+  options,
+  value,
+  onChange,
 }) => {
-    const handleChange = (e: any) => {
-        onChange(e.target.value)
-    }
+  const handleChange = (e: any) => {
+    onChange(e.target.value)
+  }
 
-    return (
-        <SelectWrapperStyle>
-            <SelectStyle
-                id={id}
-                aria-label={label}
-                aria-labelledby={explain}
-                onChange={handleChange}
-            >
-                {options.map((o: { value: number; text: string }) => {
-                    return (
-                        <option key={o.value} value={o.value}>
-                            {o.text}
-                        </option>
-                    )
-                })}
-            </SelectStyle>
-        </SelectWrapperStyle>
-    )
+  return (
+    <SelectWrapperStyle>
+      <SelectStyle
+        id={id}
+        aria-label={label}
+        aria-labelledby={explain}
+        onChange={handleChange}
+      >
+        {options.map((o: { value: number; text: string }) => {
+          return (
+            <option key={o.value} value={o.value}>
+              {o.text}
+            </option>
+          )
+        })}
+      </SelectStyle>
+    </SelectWrapperStyle>
+  )
 }
 
 Select.displayName = 'NekoSelect'

@@ -34,31 +34,31 @@ const ClassListStyle = styled.div`
 `
 
 const AccordionWrapper = ({
-    title,
-    itemLength,
-    children,
+  title,
+  itemLength,
+  children,
 }: {
     title: string
     itemLength: number
     children: React.ReactChild | Array<React.ReactChild>
 }) => {
-    const [isAccordionOpened, setIsAccordionOpened] = useState(false)
+  const [isAccordionOpened, setIsAccordionOpened] = useState(false)
 
-    const handleIsAccordionOpened = (e: any) => {
-        setIsAccordionOpened(!isAccordionOpened)
-    }
+  const handleIsAccordionOpened = (e: any) => {
+    setIsAccordionOpened(!isAccordionOpened)
+  }
 
-    return (
-        <ClassWrapperStyle>
-            <ClassStyle>
-                <ClassNameStyle onClick={handleIsAccordionOpened}>
-                    {title}
-                    <ClassCountStyle>{`(${itemLength})`}</ClassCountStyle>
-                </ClassNameStyle>
-            </ClassStyle>
-            {isAccordionOpened && <ClassListStyle>{children}</ClassListStyle>}
-        </ClassWrapperStyle>
-    )
+  return (
+    <ClassWrapperStyle>
+      <ClassStyle>
+        <ClassNameStyle onClick={handleIsAccordionOpened}>
+          {title}
+          <ClassCountStyle>{`(${itemLength})`}</ClassCountStyle>
+        </ClassNameStyle>
+      </ClassStyle>
+      {isAccordionOpened && <ClassListStyle>{children}</ClassListStyle>}
+    </ClassWrapperStyle>
+  )
 }
 
 export default AccordionWrapper

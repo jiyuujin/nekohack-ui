@@ -41,23 +41,23 @@ const ItemNameStyle = styled.div`
 `
 
 const ListItems = ({
-    itemId,
-    itemName,
-    handleClickCallback,
+  itemId,
+  itemName,
+  handleClickCallback,
 }: {
     itemId: number
     itemName: string
     handleClickCallback: any
 }) => {
-    const handleClick = () => {
-        handleClickCallback(itemId)
-    }
+  const handleClick = () => {
+    handleClickCallback(itemId)
+  }
 
-    return (
-        <ListItemStyle onClick={handleClick}>
-            <ItemNameStyle>{itemName}</ItemNameStyle>
-        </ListItemStyle>
-    )
+  return (
+    <ListItemStyle onClick={handleClick}>
+      <ItemNameStyle>{itemName}</ItemNameStyle>
+    </ListItemStyle>
+  )
 }
 
 export default ListItems

@@ -21,7 +21,7 @@ export type LabelProps = {
 }
 
 export const Label: FC<LabelProps> = ({ children }) => {
-    return <LabelStyle>{children}</LabelStyle>
+  return <LabelStyle>{children}</LabelStyle>
 }
 
 Label.displayName = 'NekoLabel'
