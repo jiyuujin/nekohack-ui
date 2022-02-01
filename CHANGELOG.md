@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## `v4.0.0-alpha.0`
+
+### [update]
+- Update plugins
+- Storybook 6.4 (CSF 3.0)
+
 ## `v3.0.2`
 
 ### [bugfix]
