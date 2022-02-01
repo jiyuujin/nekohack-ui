@@ -1,5 +1,3 @@
-import { storiesOf } from '@storybook/react'
-
 import { useState } from 'react'
 
 import { Select } from '../components/select'
@@ -19,7 +17,7 @@ const options = [
     },
 ]
 
-storiesOf('Element', module).add('Select', () => {
+export const SelectStory = () => {
     const [value, setValue] = useState(1)
     return (
         <>
@@ -36,4 +34,6 @@ storiesOf('Element', module).add('Select', () => {
             />
         </>
     )
-})
+}
+
+export default { component: SelectStory }

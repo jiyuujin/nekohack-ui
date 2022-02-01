@@ -1,5 +1,3 @@
-import { storiesOf } from '@storybook/react'
-
 import { Accordion } from '../components/accordion'
 
 type Item = {
@@ -30,7 +28,7 @@ const singleItemList: Item[] = [
     },
 ]
 
-storiesOf('Element', module).add('Accordion', () => {
+export const AccordionStory = () => {
     const handleItemClass = () => {
         //
     }
@@ -42,4 +40,6 @@ storiesOf('Element', module).add('Accordion', () => {
             updateItemClass={handleItemClass}
         />
     )
-})
+}
+
+export default { component: AccordionStory }
