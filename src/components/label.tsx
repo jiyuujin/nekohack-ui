@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const LabelStyle = styled.div`
@@ -20,7 +20,7 @@ export type LabelProps = {
     children: React.ReactNode
 }
 
-export const Label: FC<LabelProps> = ({ children }) => {
+export const Label: React.VFC<LabelProps> = ({ children }) => {
   return <LabelStyle>{children}</LabelStyle>
 }
 

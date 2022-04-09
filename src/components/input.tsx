@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 
 const InputStyle = styled.input`
@@ -87,7 +87,7 @@ export type InputProps = {
     onChange: Function
 }
 
-export const Input: FC<InputProps> = ({
+export const Input: React.VFC<InputProps> = ({
   id,
   role,
   label,
