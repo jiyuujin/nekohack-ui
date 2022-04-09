@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## `v4.0.0-alpha.1`
+## `v4.0.0-alpha.2`
 
 ### [update]
 - Update plugins
