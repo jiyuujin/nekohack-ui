@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const SelectWrapperStyle = styled.div`
@@ -49,7 +49,7 @@ export type SelectProps = {
     onChange: Function
 }
 
-export const Select: FC<SelectProps> = ({
+export const Select: React.VFC<SelectProps> = ({
   id,
   label,
   explain,
