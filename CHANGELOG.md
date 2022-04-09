@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## `v4.0.0-alpha.1`
+
+### [update]
+- Update plugins
+- React 18 (Use `VFC` instead)
+
 ## `v4.0.0-alpha.0`
 
 ### [update]
