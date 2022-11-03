@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## `v4.0.0-beta.0`
+
+### [update]
+Upgrade to beta from alpha
+
 ## `v4.0.0-alpha.4`
 
 ### [update]
