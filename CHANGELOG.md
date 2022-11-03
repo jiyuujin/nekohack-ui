@@ -1,10 +1,14 @@
 # CHANGELOG
 
+## `v4.0.0-alpha.4`
+
+### [update]
+- React 18 (Revert to `FC` from `VFC`)
+
 ## `v4.0.0-alpha.3`
 
 ### [update]
 - Update plugins
-- React 18 (Revert to `FC` from `VFC`)
 
 ## `v4.0.0-alpha.2`
 
