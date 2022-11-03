@@ -17,11 +17,10 @@ const ButtonStyle = styled.button`
 `
 
 export type ButtonProps = {
-    children?: React.ReactNode
-    onClick: Function
+  onClick: Function
 }
 
-export const Button: React.VFC<ButtonProps> = ({ children, onClick }) => {
+export const Button = ({ children, onClick }: React.PropsWithChildren<ButtonProps>) => {
   const handleClick = (e: any) => {
     onClick()
   }
