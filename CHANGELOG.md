@@ -11,11 +11,13 @@
 ### [update]
 - Update changelog
 
-## `v4.0.0-alpha.1`
+## ~~`v4.0.0-alpha.1`~~ (closed)
 
 ### [update]
 - Update plugins
 - React 18 (Use `VFC` instead)
+
+※ Closed due to tag omission.
 
 ## `v4.0.0-alpha.0`
 
