@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Select } from '../components/select'
+import { Select } from './Select'
 
 const options = [
   {

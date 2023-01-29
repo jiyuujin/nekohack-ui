@@ -3,17 +3,34 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Input as NekoInput } from '../src/components/input'
+import { Select as NekoSelect } from './Select'
+
+const options = [
+  {
+    value: 1,
+    text: 'Angular',
+  },
+  {
+    value: 2,
+    text: 'React',
+  },
+  {
+    value: 3,
+    text: 'Vue',
+  },
+]
 
 const setValue = () => {
   console.log('updated')
 }
 
-describe('Input', () => {
+describe('Select', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<NekoInput value={'Input'} onChange={setValue} />)
+    wrapper = shallow(
+      <NekoSelect options={options} value={1} onChange={setValue} />
+    )
   })
 
   it('should render without errors', () => {

@@ -3,14 +3,14 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Accordion as NekoAccordion } from '../src/components/accordion'
+import { Accordion as NekoAccordion } from './Accordion'
 
 type Item = {
-    itemId: number
-    itemName: string
-    backgroundColor: string
-    color: string
-}
+  itemId: number;
+  itemName: string;
+  backgroundColor: string;
+  color: string;
+};
 
 const singleItemList: Item[] = [
   {

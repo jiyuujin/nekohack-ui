@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Input } from '../components/input'
+import { Input } from './Input'
 
 const escape = (str: string) => {
   return str.replace(/\n/g, '<br/>')
@@ -97,4 +97,9 @@ export const InputStory4 = () => {
   )
 }
 
-export default { component: InputStory1, InputStory2, InputStory3, InputStory4 }
+export default {
+  component: InputStory1,
+  InputStory2,
+  InputStory3,
+  InputStory4,
+}
