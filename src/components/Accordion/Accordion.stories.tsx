@@ -1,11 +1,11 @@
-import { Accordion } from '../components/accordion'
+import { Accordion } from './Accordion'
 
 type Item = {
-    itemId: number
-    itemName: string
-    backgroundColor: string
-    color: string
-}
+  itemId: number;
+  itemName: string;
+  backgroundColor: string;
+  color: string;
+};
 
 const singleItemList: Item[] = [
   {

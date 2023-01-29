@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-import { Button as NekoButton } from '../src/components/button'
+import { Button as NekoButton } from './Button'
 
 const submit = () => {
   console.log('clicked')

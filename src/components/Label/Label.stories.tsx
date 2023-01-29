@@ -1,4 +1,4 @@
-import { Label } from '../components/label'
+import { Label } from './Label'
 
 export const LabelStory = () => <Label>Label</Label>
 
