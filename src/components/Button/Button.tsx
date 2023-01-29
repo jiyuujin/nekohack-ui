@@ -1,23 +1,17 @@
 import React from 'react'
 import { ButtonStyle } from './Button.styles'
 
-export type ButtonProps = {
-  onClick: Function;
-};
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function Button({
-  children,
-  onClick,
-}: React.PropsWithChildren<ButtonProps>) {
-  const handleClick = (e: any) => {
-    onClick()
-  }
-
+export const Button = React.forwardRef<
+  HTMLButtonElement,
+  React.PropsWithChildren<ButtonProps>
+>(function Button(props, ref) {
   return (
-    <ButtonStyle role="button" aria-pressed="true" onClick={handleClick}>
-      {children}
+    <ButtonStyle role="button" aria-pressed="true" ref={ref} {...props}>
+      {props.children}
     </ButtonStyle>
   )
-}
+})
 
 Button.displayName = 'NekoButton'
